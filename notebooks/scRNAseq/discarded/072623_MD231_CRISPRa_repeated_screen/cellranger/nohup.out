@@ -1,0 +1,44 @@
+[NbConvertApp] Converting notebook unique_cell_bc_analysis_CRISPRi_032923.ipynb to notebook
+[NbConvertApp] Writing 54998 bytes to unique_cell_bc_analysis_CRISPRi_032923.nbconvert.ipynb
+[NbConvertApp] Converting notebook unique_cell_bc_analysis_CRISPRi_032923.ipynb to notebook
+[NbConvertApp] Writing 159881 bytes to unique_cell_bc_analysis_CRISPRi_032923.nbconvert.ipynb
+[NbConvertApp] Converting notebook unique_cell_bc_analysis_CRISPRi_032923.ipynb to notebook
+[NbConvertApp] ERROR | Kernel died while waiting for execute reply.
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/jupyter_core/application.py", line 285, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/traitlets/config/application.py", line 1043, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 410, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 585, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 551, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 477, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 352, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ssobti/miniconda3/envs/seq_trblsht/lib/python3.10/site-packages/nbclient/client.py", line 1005, in async_execute_cell
+    raise DeadKernelError("Kernel died") from None
+nbclient.exceptions.DeadKernelError: Kernel died

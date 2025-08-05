@@ -1,0 +1,85 @@
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot.ipynb to notebook
+pid 716877's current affinity list: 0-55
+pid 716877's new affinity list: 0-19
+Error: Process 3863494 detected, but you don't have permission to control it
+No process found
+Error: Process 3863494 detected, but you don't have permission to control it
+No process found
+Process 716877 dead!
+Process 716877 detected
+[NbConvertApp] Writing 9903 bytes to cellranger_low_guide_count_troubleshoot.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot.ipynb to notebook
+pid 1143632's current affinity list: 0-55
+pid 1143632's new affinity list: 0-19
+[NbConvertApp] Writing 9914 bytes to cellranger_low_guide_count_troubleshoot.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot.ipynb to notebook
+pid 1578225's current affinity list: 0-55
+pid 1578225's new affinity list: 0-19
+Process 1578225 dead!
+Process 1578225 detected
+[NbConvertApp] Writing 8789 bytes to cellranger_low_guide_count_troubleshoot.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot.ipynb to notebook
+pid 3052353's current affinity list: 0-55
+pid 3052353's new affinity list: 0-19
+[NbConvertApp] ERROR | Kernel died while waiting for execute reply.
+Process 3052353 dead!
+Process 3052353 detected
+Traceback (most recent call last):
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/bin/jupyter-nbconvert", line 10, in <module>
+    sys.exit(main())
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/jupyter_core/application.py", line 285, in launch_instance
+    return super().launch_instance(argv=argv, **kwargs)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/traitlets/config/application.py", line 1043, in launch_instance
+    app.start()
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 414, in start
+    self.convert_notebooks()
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 589, in convert_notebooks
+    self.convert_single_notebook(notebook_filename)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 555, in convert_single_notebook
+    output, resources = self.export_single_notebook(
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/nbconvertapp.py", line 481, in export_single_notebook
+    output, resources = self.exporter.from_filename(
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 201, in from_filename
+    return self.from_file(f, resources=resources, **kw)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 220, in from_file
+    return self.from_notebook_node(
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/exporters/notebook.py", line 36, in from_notebook_node
+    nb_copy, resources = super().from_notebook_node(nb, resources, **kw)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 154, in from_notebook_node
+    nb_copy, resources = self._preprocess(nb_copy, resources)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/exporters/exporter.py", line 352, in _preprocess
+    nbc, resc = preprocessor(nbc, resc)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/preprocessors/base.py", line 48, in __call__
+    return self.preprocess(nb, resources)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 100, in preprocess
+    self.preprocess_cell(cell, resources, index)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbconvert/preprocessors/execute.py", line 121, in preprocess_cell
+    cell = self.execute_cell(cell, index, store_history=True)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/jupyter_core/utils/__init__.py", line 166, in wrapped
+    return loop.run_until_complete(inner)
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/ssobti/miniconda3/envs/sequencing_trblsht_py/lib/python3.10/site-packages/nbclient/client.py", line 1005, in async_execute_cell
+    raise DeadKernelError("Kernel died") from None
+nbclient.exceptions.DeadKernelError: Kernel died
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot.ipynb to notebook
+[NbConvertApp] Writing 12872 bytes to cellranger_low_guide_count_troubleshoot.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot.ipynb to notebook
+[NbConvertApp] Writing 17419 bytes to cellranger_low_guide_count_troubleshoot.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot_pure_python.ipynb to notebook
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot_cutadapt_python.ipynb to notebook
+[NbConvertApp] Writing 40192 bytes to cellranger_low_guide_count_troubleshoot_cutadapt_python.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot_cutadapt_python.ipynb to notebook
+[NbConvertApp] Writing 44419 bytes to cellranger_low_guide_count_troubleshoot_cutadapt_python.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot_cutadapt_python.ipynb to notebook
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot_pure_python.ipynb to notebook
+[NbConvertApp] Writing 40201 bytes to cellranger_low_guide_count_troubleshoot_cutadapt_python.nbconvert.ipynb
+[NbConvertApp] Writing 13120 bytes to cellranger_low_guide_count_troubleshoot_pure_python.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot_cutadapt_python.ipynb to notebook
+[NbConvertApp] Writing 17739 bytes to cellranger_low_guide_count_troubleshoot_cutadapt_python.nbconvert.ipynb
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot_pure_python.ipynb to notebook
+[NbConvertApp] Converting notebook cellranger_low_guide_count_troubleshoot_cutadapt_python.ipynb to notebook
+[NbConvertApp] Writing 18054 bytes to cellranger_low_guide_count_troubleshoot_cutadapt_python.nbconvert.ipynb
+[NbConvertApp] Writing 13435 bytes to cellranger_low_guide_count_troubleshoot_pure_python.nbconvert.ipynb
+[NbConvertApp] Converting notebook unique_cell_bc_analysis.ipynb to notebook
+[NbConvertApp] Writing 8839 bytes to unique_cell_bc_analysis.nbconvert.ipynb
