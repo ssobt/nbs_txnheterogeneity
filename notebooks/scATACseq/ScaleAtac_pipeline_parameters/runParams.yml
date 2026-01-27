@@ -1,0 +1,24 @@
+##### Required Analysis Parameters
+# Run "nextflow run path/to/ScaleAtac --help" for a full list and documentation
+# Also see "nextflow.config" for defaults
+
+##### Inputs
+### Sequencing data input can be either a Illumina sequencer RunFolder (bcl)
+# runFolder : s3://scale.pub/testData/uniATAC/PBMC/220222_NB552332_0226_AHH5KJBGXL/
+### or a directory with fastq files
+fastqDir : "/khayyam/ssobti/projects/heterogeneity_brian/data/091724_scATACseq/HGL_ITH_drivers/"
+
+### A file listing all samples in the analysis with their barcode sequences and sample settings
+samples : /khayyam/ssobti/projects/heterogeneity_brian/uploaded_data/scATACseq/parameters/samples.csv
+
+#### Reference information
+### Path to a .json file defining the reference genome
+genome : /khayyam/ssobti/projects/heterogeneity_brian/uploaded_data/scATACseq/genome/grch38/grch38.json
+
+### BED file with peak coordinates to use for quantification (count matrix output)
+### instead of per-sample de-novo calls
+# peaks = "peaks.bed" 
+#
+#
+runArchR : true
+archrCondaEnv : "/khayyam/ssobti/miniconda3/envs/archrEnv"
